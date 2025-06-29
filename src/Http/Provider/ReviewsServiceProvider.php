@@ -1,10 +1,10 @@
 <?php
 
-namespace Jazer\Forms\Http\Provider;
+namespace Jazer\Reviews\Http\Provider;
 
 use Illuminate\Support\ServiceProvider;
 
-class FormsServiceProvider extends ServiceProvider
+class ReviewsServiceProvider extends ServiceProvider
 {
     public function register(): void
     {
@@ -21,6 +21,6 @@ class FormsServiceProvider extends ServiceProvider
         
         $this->loadRoutesFrom( __DIR__ . '/../../../routes/api.php');
 
-        config(['database.connections.conn_reviews' => config('forms.database_connection')]);
+        config(['database.connections.conn_reviews' => config('reviews.database_connection')]);
     }
 }

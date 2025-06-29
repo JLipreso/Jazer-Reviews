@@ -5,7 +5,7 @@ namespace Jazer\Reviews\Http\Controllers\Utility;
 use App\Http\Controllers\Controller;
 
 /**
- * \Jazer\Forms\Http\Controllers\Utility\Paginator::create('AUT');
+ * \Jazer\Reviews\Http\Controllers\Utility\Paginator::create('AUT');
  */
 
 class Paginator extends Controller

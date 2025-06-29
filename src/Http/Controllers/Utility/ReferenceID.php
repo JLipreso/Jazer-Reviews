@@ -6,7 +6,7 @@ namespace Jazer\Reviews\Http\Controllers\Utility;
 use App\Http\Controllers\Controller;
 
 /**
- * \Jazer\Forms\Http\Controllers\Utility\ReferenceID::create('AUT');
+ * \Jazer\Reviews\Http\Controllers\Utility\ReferenceID::create('AUT');
  */
 
 class ReferenceID extends Controller
