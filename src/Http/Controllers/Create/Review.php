@@ -8,5 +8,10 @@ use Illuminate\Support\Facades\DB;
 
 class Review extends Controller
 {
-    
+    public static function create() {
+        /**
+         * This function review report
+         */
+        return [];
+    }
 }

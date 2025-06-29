@@ -1,0 +1,21 @@
+The following are goal of this module
+
+What is "review" module?
+    ANS: Review module is a reusable module for making:
+        a. Product review
+        b. Delivery rider review
+        c. Store review
+        d. Service review
+    And more review category will be added soon
+    This module is intended for website, mobile and all type oif software and platform.
+    A UI Library will be created too, soon as API endpoint become available for public use.
+
+Feature Number 1:
+    The feature should allow user to post a review
+
+Feature Number 2:
+    Any user can report the review if it contain malicious text or images
+
+Feature Number 3:
+    Staff should review the report and make response.
+
