@@ -1,8 +1,8 @@
 -----------------------------------------------------------------------------------
 Installation:
 -----------------------------------------------------------------------------------
-    composer require jazer/forms:dev-main
-    composer update jazer/forms
+    composer require jazer/reviews:dev-main
+    composer update jazer/reviews
     php artisan vendor:publish --tag=jtreviewsconfig-config
     connection: conn_reviews
 
@@ -10,4 +10,54 @@ Installation:
 Routes:
 ----------------------------------------------------------------------------------- 
 
+
+
+-----------------------------------------------------------------------------------
+Table Info
+----------------------------------------------------------------------------------- 
+    reviews.reference_id
+        Unquie identifier of the data, we don't use dataid or id to access data.
+
+    reviews.project_refid
+        Unquie ID of the project, it serve as identifier of project the module is being used
+
+    reviews.review_type
+        Type review made, the purpose is to allow database categorize review data
+        with following values:
+
+        PRD: Product Review
+        RDR: Rider Review
+        STR: Store review includes grocery, restaurant, etc.
+        SER: Service review (For oncall services)
+
+    reviews.target_refid
+        The Unquie identifier of the object being review
+
+    reviews.comment
+        The comment or feedback the user made or posted
+
+    reviews.media_refid
+        Gallery reference_id ID of the object being review
+
+    reviews.created_at
+        Current date and time
+    
+    reviews.created_by 
+        Unquie identifier of the user or review creator
+
+    reviews.public
+        Condition if review is visible to public or not with the following value:
+        0: Not public, in this case review is hidden to public
+        1: The review is visible to public
+    
+    reviews.malicious
+        Identifier if the comment is malicious
+        0: This review is marked as not malicious
+        1: This review is marked as malicious which means it contain unappropriate
+    
+    reviews.malicious_remarks
+        A short explaination why review is malicious
+        
+
+    
 
