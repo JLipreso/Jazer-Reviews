@@ -21,6 +21,6 @@ class ReviewsServiceProvider extends ServiceProvider
         
         $this->loadRoutesFrom( __DIR__ . '/../../../routes/api.php');
 
-        config(['database.connections.conn_reviews' => config('reviews.database_connection')]);
+        config(['database.connections.conn_reviews' => config('jtreviewsconfig.database_connection')]);
     }
 }

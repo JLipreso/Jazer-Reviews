@@ -59,5 +59,18 @@ Table Info
         A short explaination why review is malicious
         
 
+-----------------------------------------------------------------------------------
+Routes: 
+-----------------------------------------------------------------------------------
+ FOR REVIEW
+    reviews/createreview?review_type=STR&target_refid=STR&comment=STR&created_by=STR
+    reviews/updatecomment?reference_id=STR
+    reviews/paginatereview?page=STR
+ FOR REVIEW REPORTS
+    reports/createreport?report_comment=STR&report_by=STR
+    reports/onreviewreport?review_refid=STR
+    reports/review_refid=STR&response_comment=STR&response_by=STR
+    eports/closereport?review_refid=STR
+    reports/paginatereport?page=STR  
     
 

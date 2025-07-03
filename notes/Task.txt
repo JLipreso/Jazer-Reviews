@@ -1,0 +1,23 @@
+
+REVIEW
+1. Create review
+2. Upload of image/video (Skip) - Jason
+3. Update "comment" column (Allow user to upadte her comment)
+3. Pagination
+
+Add to the round: route/api.php
+
+
+REVIEW REPORT
+1. Create review
+    project_refid, review_refid, report_comment, report_at, report_by
+2. Let admin update the status of the report as "onreview"
+    onreview (0: Pending 1: Onreview), onreview_date
+3. Let admin make response
+    response_at, response_by, response_comment
+4. Close the report
+    done (0: Ongoing, 1: Done), done_date
+
+Add to the round: route/api.php
+
+

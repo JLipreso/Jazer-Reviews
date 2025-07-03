@@ -6,12 +6,12 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 
-class Paginate extends Controller
+class PaginateReport extends Controller
 {
     public static function paginate(Request $request) {
 
         if((isset($request['where'])) && ($request['where'] !== null )) {
-            return DB::connection("conn_reviews")->table("reviews")
+            return DB::connection("conn_reviews")->table("reviews_report")
             ->where([
                 "project_refid"     => config('jtreviewsconfig.project_refid')
             ])
@@ -20,7 +20,7 @@ class Paginate extends Controller
             ->paginate(config('jtreviewsconfig.fetch_paginate_max'));
         }
         else {
-            return DB::connection("conn_reviews")->table("reviews")
+            return DB::connection("conn_reviews")->table("reviews_report")
             ->where([
                 "project_refid"     => config('jtreviewsconfig.project_refid')
             ])
